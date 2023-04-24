@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.calculator {
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 350px;
+  height: 635px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  padding: 10px;
+  gap: 20px;
+}
+
+.calculator h2 {
+  color: #429bfa;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.calculator .display1 {
+  width: fit-content;
+  height: fit-content;
+}
+
+.calculator .display1 .math {
+  width: 300px;
+  height: 70px;
+  resize: none;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: #fff;
+  background: none;
+  text-align: end;
+  vertical-align: baseline;
+  font-size: 20px;
+  outline: none;
+  border: none;
+}
+
+.calculator .display2 {
+  width: fit-content;
+  height: fit-content;
+}
+
+.calculator .display2 .result {
+  width: 300px;
+  height: 60px;
+  font-size: 30px;
+  background: none;
+  outline: none;
+  color: #fff;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: end;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.calculator .firstrow, .secondrow, .thirdrow, .fourthrow, .fifthrow {
+  display: flex;
+  gap: 23px;
+}
+
+.calculator input[type="button"] {
+  font-size: 23px;
+  width: 51px;
+  height: 51px;
+  border-radius: 40%;
+  border: none;
+  background-color: #262834;
+  color: #2982e0;
+  font-weight: bolder;
+  vertical-align: middle;
+  transition: all linear 0.2s;
+}
+
+.calculator input[type="button"]:active {
+  transform: scale(0.9);
+}
+
+.calculator input[name="addition"], .calculator input[name="substraction"], .calculator input[name="multiplication"], .calculator input[name="division"], .calculator input[name="equalto"], .calculator input[name="percentage"] {
+  background-color: #2982e0;
+  color: #0d2b4b;
+}
+
+.calculator .firstrow input[name="clear"] , .calculator .firstrow input[name="delete"] {
+  background-color: #666666;
+  color: #cccccc;
+}
+
+.calculator input[name="equalto"] {
+  width: 125px;
+  border-radius: 20px;
+}
